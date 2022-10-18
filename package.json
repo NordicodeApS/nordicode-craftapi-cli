@@ -1,6 +1,6 @@
 {
     "name": "craftapi-cli",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "A mock server based on Open API Spec from CraftAPI",
     "main": "src/craftapi-cli.js",
     "bin": {
@@ -24,7 +24,6 @@
     "author": "Jess Stopa @ Nordicode ApS",
     "license": "MIT",
     "dependencies": {
-        "http": "^0.0.1-security",
         "js-yaml": "^4.1.0",
         "lllog": "^1.1.2",
         "open-api-mocker": "^1.11.1",
