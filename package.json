@@ -1,5 +1,5 @@
 {
-    "name": "craftapi",
+    "name": "craftapi-cli",
     "version": "0.1.0",
     "description": "A mock server based on Open API Spec from CraftAPI",
     "main": "src/craftapi-cli.js",
