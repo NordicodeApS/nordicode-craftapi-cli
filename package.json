@@ -1,0 +1,37 @@
+{
+    "name": "craftapi",
+    "version": "0.1.0",
+    "description": "A mock server based on Open API Spec from CraftAPI",
+    "main": "src/craftapi-cli.js",
+    "bin": {
+        "craftapi": "src/craftapi-cli.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "files": [
+        "src/"
+    ],
+    "keywords": [
+        "api",
+        "openapi",
+        "schema",
+        "mock",
+        "mocking",
+        "craftapi",
+        "craftapi-cli"
+    ],
+    "author": "Jess Stopa @ Nordicode ApS",
+    "license": "MIT",
+    "dependencies": {
+        "http": "^0.0.1-security",
+        "js-yaml": "^4.1.0",
+        "lllog": "^1.1.2",
+        "open-api-mocker": "^1.11.1",
+        "yargs": "^17.6.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NordicodeApS/nordicode-craftapi-cli.git"
+    }
+}
