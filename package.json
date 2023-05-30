@@ -1,6 +1,6 @@
 {
     "name": "craftapi-cli",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "description": "A mock server based on Open API Spec from CraftAPI",
     "main": "src/craftapi-cli.js",
     "bin": {
@@ -26,7 +26,7 @@
     "dependencies": {
         "js-yaml": "^4.1.0",
         "lllog": "^1.1.2",
-        "open-api-mocker": "^1.11.1",
+        "open-api-mocker": "github:jormaechea/open-api-mocker#roadmap/v2",
         "yargs": "^17.6.0"
     },
     "repository": {
