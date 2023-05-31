@@ -20,8 +20,14 @@ const { argv } = require("yargs")
   .option("watch", {
     type: "boolean",
     alias: "w",
-    description: "Indicates if schema should be watched for changes or not",
+    description: "Reload the schema every 10 seconds",
     default: false,
+  })
+  .option("interval", {
+    type: "number",
+    alias: "i",
+    description: "Set the interval at which to reload the schema",
+    default: 10,
   })
   .option("verbose", {
     type: "boolean",
@@ -52,7 +58,9 @@ else if (argv.quiet) logger.setMinLevel("error");
       port: argv.port,
       schema: argv.schema,
       watch: !!argv.watch,
-      schemaLoader: new URLSchemaLoader(),
+      schemaLoader: new URLSchemaLoader({
+        interval: argv.interval,
+      }),
     });
 
     await openApiMocker.validate();

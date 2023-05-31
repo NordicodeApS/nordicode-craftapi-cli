@@ -5,6 +5,12 @@ const YAML = require("js-yaml");
 const logger = require("lllog")();
 
 class URLSchemaLoader extends EventEmitter {
+  constructor(options) {
+    super();
+
+    this.interval = options.interval || 10;
+  }
+
   // SchemaOption is the value of the `schema` option or the value passed to the `setSchema` method. It's value depends on what your loader needs.
   async load(schemaURL) {
     if (!schemaURL.match(/^http/)) {
@@ -17,9 +23,9 @@ class URLSchemaLoader extends EventEmitter {
   }
 
   watch() {
-    logger.info("Schema will update every 10 seconds...");
+    logger.info(`Schema will update every ${this.interval} seconds...`);
 
-    setInterval(async () => this.emit("schema-changed"), 10000);
+    setInterval(async () => this.emit("schema-changed"), this.interval * 1000);
   }
 
   makeSynchronousRequest(url) {

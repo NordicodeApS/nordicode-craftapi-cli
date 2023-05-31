@@ -20,9 +20,10 @@ See the [open-api-mocker docs](https://github.com/jormaechea/open-api-mocker/blo
 
 | Option  | Required | Example  | Description  |
 |---|---|---|---|
-| -s | true | -s https://app.craftapi.dev/mock/ABC123/DEF456/openapi | The CraftAPI schema URL. |
-| -p | false | -p 3000 | The port the server will listen to. The default is 5001.  |
+| -s [url] | true | -s https://... | The CraftAPI schema URL. |
+| -p [port] | false | -p 3000 | The port the server will listen to. The default is 5001.  |
 | -w  | false | -w | Reload the schema every 10 seconds. |
+| -i [seconds]  | false | -i 30 | Set the interval at which to reload the schema. |
 
 Write `--help` to prompt every available setting.
 
