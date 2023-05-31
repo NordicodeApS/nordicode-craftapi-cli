@@ -9,13 +9,7 @@ This is basically a wrapper for [OpenAPI Mocker](https://github.com/jormaechea/o
 ```
 npm i -g craftapi-cli
 
-craftapi -s http://craftapi.dev/mock/QWERTY1234/openapi
-```
-
-### Using docker
-
-```
-coming soon!
+craftapi -s https://app.craftapi.dev/mock/[WORKSPACE-TOKEN]/[PROJECT-TOKEN]/openapi
 ```
 
 ### More info
@@ -26,7 +20,7 @@ See the [open-api-mocker docs](https://github.com/jormaechea/open-api-mocker/blo
 
 | Option  | Required | Example  | Description  |
 |---|---|---|---|
-| -s | true | -s http://craftapi.dev/mock/123456/openapi | The CraftAPI schema URL. |
+| -s | true | -s https://app.craftapi.dev/mock/ABC123/DEF456/openapi | The CraftAPI schema URL. |
 | -p | false | -p 3000 | The port the server will listen to. The default is 5001.  |
 | -w  | false | -w | Reload the schema every 10 seconds. |
 
